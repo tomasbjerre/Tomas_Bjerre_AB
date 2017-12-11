@@ -53,11 +53,20 @@ I enjoy developing software on my spare time. I host most of my own projects on 
 <p>
 I'm a Jenkins plugin committer, founder/maintainer of these plugins:
 <ul>
- <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Generic+Webhook+Trigger+Plugin">Generic Webhook Trigger Plugin</a></li>
- <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Git+Changelog+Plugin">Git Changelog Plugin</a></li>
- <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Violation+Comments+to+GitLab+Plugin">Violation Comments to GitLab Plugin</a></li>
- <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Violation+Comments+to+GitHub+Plugin">Violation Comments to GitHub Plugin</a></li>
- <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Violation+Comments+to+Bitbucket+Server+Plugin">Violation Comments to Bitbucket Server Plugin</a></li>
+ <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Generic+Webhook+Trigger+Plugin">Generic Webhook Trigger Plugin</a>,
+  <i><span class="jenkins-stats" data-plugin="generic-webhook-trigger"></span> installations.</i></li>
+
+ <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Git+Changelog+Plugin">Git Changelog Plugin</a>,
+  <i><span class="jenkins-stats" data-plugin="git-changelog"></span> installations.</i></li>
+
+ <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Violation+Comments+to+GitLab+Plugin">Violation Comments to GitLab Plugin</a>,
+  <i><span class="jenkins-stats" data-plugin="violation-comments-to-gitlab"></span> installations.</i></li>
+
+ <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Violation+Comments+to+GitHub+Plugin">Violation Comments to GitHub Plugin</a>,
+  <i><span class="jenkins-stats" data-plugin="violation-comments-to-github"></span> installations.</i></li>
+
+ <li> <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Violation+Comments+to+Bitbucket+Server+Plugin">Violation Comments to Bitbucket Server Plugin</a>,
+  <i><span class="jenkins-stats" data-plugin="violation-comments-to-stash"></span> installations.</i></li>
 </ul>
 </p>
 
@@ -100,5 +109,24 @@ I also have some mixed projects on:
       </footer>
     </div>
 
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function() {
+     $('.jenkins-stats').each(function(index,item) {
+      var $item = $(item);
+      var pluginId = $item.data('plugin');
+      $.getJSON('http://stats.jenkins.io/plugin-installation-trend/' + pluginId + '.stats.json?'+new Date().getTime(), function(resp) {
+       var maxKey = Object.keys(resp.installations).reduce(function(a, b){ return a > b ? a : b });
+       var installations = resp.installations[maxKey];
+       $item.html(installations);
+      });
+     });
+    });
+  </script>
   </body>
 </html>
