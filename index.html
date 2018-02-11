@@ -124,7 +124,7 @@ I also have some mixed projects on:
        var maxKey = Object.keys(resp.installations).reduce(function(a, b){ return a > b ? a : b });
        var date = new Date(parseInt(maxKey))
        var installations = resp.installations[maxKey];
-       $item.html(installations+" installations "+date.toDateString());
+       $item.html("<b>"+installations+"</b> installations "+date.toDateString());
       });
      });
     });
