@@ -1,5 +1,8 @@
 #!/bin/bash
 server=https://stats.jenkins.io/plugin-installation-trend
+
+rm -v *stats.json*
+
 wget $server/generic-webhook-trigger.stats.json --no-check-certificate
 wget $server/git-changelog.stats.json --no-check-certificate
 wget $server/violation-comments-to-gitlab.stats.json --no-check-certificate
