@@ -124,6 +124,11 @@ I also have some mixed projects on:
     crossorigin="anonymous"></script>
 
   <script>
+
+  function prettyNbr(nbr) {
+   return nbr.toLocaleString()
+  }
+
     $(document).ready(function() {
      $('.jenkins-stats').each(function(index,item) {
       var $item = $(item);
@@ -131,8 +136,8 @@ I also have some mixed projects on:
       $.getJSON(pluginId + '.stats.json?'+new Date().getTime(), function(resp) {
        var maxKey = Object.keys(resp.installations).reduce(function(a, b){ return a > b ? a : b });
        var date = new Date(parseInt(maxKey))
-       var installations = resp.installations[maxKey];
-       $item.html("<b>"+installations+"</b> installations "+date.toDateString());
+       var installations = prettyNbr(resp.installations[maxKey]);
+       $item.html("<b>"+installations+"</b> installs "+date.toDateString());
       });
      });
 
@@ -140,9 +145,9 @@ I also have some mixed projects on:
       var $item = $(item);
       var pluginId = $item.data('plugin');
       $.getJSON(pluginId + '?'+new Date().getTime(), function(resp) {
-       var installations = resp._embedded.distribution.totalInstalls;
-       var downloads = resp._embedded.distribution.downloads;
-       var users = resp._embedded.distribution.totalUsers;
+       var installations = prettyNbr(resp._embedded.distribution.totalInstalls);
+       var downloads = prettyNbr(resp._embedded.distribution.downloads);
+       var users = prettyNbr(resp._embedded.distribution.totalUsers)
        $item.html("<b>"+installations+"</b> installs, <b>"+downloads+"</b> downloads, <b>"+users+"</b> users");
       });
      });
