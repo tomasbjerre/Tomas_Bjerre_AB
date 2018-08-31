@@ -75,9 +75,17 @@ I've founded and is maintaining these Atlassian Bitbucket Server plugins:
 
 <ul>
  <li> <a target="_blank" href="https://marketplace.atlassian.com/plugins/se.bjurr.prnfs.pull-request-notifier-for-stash/overview">Pull Request Notifier for Bitbucket Server</a>
+  <i><span class="atlassian-stats" data-plugin="se.bjurr.prnfs.pull-request-notifier-for-stash"></span>.</i></li>
+
  <li> <a target="_blank" href="https://marketplace.atlassian.com/plugins/se.bjurr.sscc.sscc/overview">Simple Bitbucket Commit Checker</a>
+  <i><span class="atlassian-stats" data-plugin="se.bjurr.sscc.sscc"></span>.</i></li>
+
  <li> <a target="_blank" href="https://marketplace.atlassian.com/plugins/se.bjurr.ssfb.settings-synchronizer-for-bitbucket/overview">Settings Synchronizer for Bitbucket</a>
+  <i><span class="atlassian-stats" data-plugin="se.bjurr.ssfb.settings-synchronizer-for-bitbucket"></span>.</i></li>
+
  <li> <a target="_blank" href="https://marketplace.atlassian.com/plugins/se.bjurr.changelog.git-changelog-for-bitbucket/server/overview">Git Changelog for Bitbucket</a>
+  <i><span class="atlassian-stats" data-plugin="se.bjurr.changelog.git-changelog-for-bitbucket"></span>.</i></li>
+
 </ul>
 </p>
 
@@ -125,6 +133,17 @@ I also have some mixed projects on:
        var date = new Date(parseInt(maxKey))
        var installations = resp.installations[maxKey];
        $item.html("<b>"+installations+"</b> installations "+date.toDateString());
+      });
+     });
+
+     $('.atlassian-stats').each(function(index,item) {
+      var $item = $(item);
+      var pluginId = $item.data('plugin');
+      $.getJSON(pluginId + '?'+new Date().getTime(), function(resp) {
+       var installations = resp._embedded.distribution.totalInstalls;
+       var downloads = resp._embedded.distribution.downloads;
+       var users = resp._embedded.distribution.totalUsers;
+       $item.html("<b>"+installations+"</b> installs, <b>"+downloads+"</b> downloads, <b>"+users+"</b> users");
       });
      });
     });
