@@ -1,15 +1,24 @@
 #!/bin/bash
+
+doget () {
+ server=$1
+ file=$2
+ wget $1/$2 --no-check-certificate -O json/$2
+ cat json/$2 | python -m json.tool > json/$2.pretty
+} 
+
+rm -rfv json || echo No json folder
+mkdir json
+
 server=https://stats.jenkins.io/plugin-installation-trend
-rm -v *stats.json*
-wget $server/generic-webhook-trigger.stats.json --no-check-certificate
-wget $server/git-changelog.stats.json --no-check-certificate
-wget $server/violation-comments-to-gitlab.stats.json --no-check-certificate
-wget $server/violation-comments-to-github.stats.json --no-check-certificate
-wget $server/violation-comments-to-stash.stats.json --no-check-certificate
+doget $server generic-webhook-trigger.stats.json
+doget $server git-changelog.stats.json
+doget $server violation-comments-to-gitlab.stats.json
+doget $server violation-comments-to-github.stats.json
+doget $server violation-comments-to-stash.stats.json
 
 addons=https://marketplace.atlassian.com/rest/2/addons
-rm -v se.bjurr.*
-wget $addons/se.bjurr.prnfs.pull-request-notifier-for-stash
-wget $addons/se.bjurr.sscc.sscc
-wget $addons/se.bjurr.changelog.git-changelog-for-bitbucket
-wget $addons/se.bjurr.ssfb.settings-synchronizer-for-bitbucket
+doget $addons se.bjurr.prnfs.pull-request-notifier-for-stash
+doget $addons se.bjurr.sscc.sscc
+doget $addons se.bjurr.changelog.git-changelog-for-bitbucket
+doget $addons se.bjurr.ssfb.settings-synchronizer-for-bitbucket

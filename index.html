@@ -133,7 +133,7 @@ I also have some mixed projects on:
      $('.jenkins-stats').each(function(index,item) {
       var $item = $(item);
       var pluginId = $item.data('plugin');
-      $.getJSON(pluginId + '.stats.json?'+new Date().getTime(), function(resp) {
+      $.getJSON("json/"+pluginId + '.stats.json?'+new Date().getTime(), function(resp) {
        var maxKey = Object.keys(resp.installations).reduce(function(a, b){ return a > b ? a : b });
        var date = new Date(parseInt(maxKey))
        var installations = prettyNbr(resp.installations[maxKey]);
@@ -144,7 +144,7 @@ I also have some mixed projects on:
      $('.atlassian-stats').each(function(index,item) {
       var $item = $(item);
       var pluginId = $item.data('plugin');
-      $.getJSON(pluginId + '?'+new Date().getTime(), function(resp) {
+      $.getJSON("json/"+pluginId + '?'+new Date().getTime(), function(resp) {
        var installations = prettyNbr(resp._embedded.distribution.totalInstalls);
        var downloads = prettyNbr(resp._embedded.distribution.downloads);
        var users = prettyNbr(resp._embedded.distribution.totalUsers)
