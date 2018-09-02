@@ -16,7 +16,7 @@ doget () {
 rm -rfv json || echo No json folder
 mkdir json
 
-server=https://stats.jenkins.io/plugin-installation-trend
+server=https://statss.jenkins.io/plugin-installation-trend
 doget $server generic-webhook-trigger.stats.json
 doget $server git-changelog.stats.json
 doget $server violation-comments-to-gitlab.stats.json
