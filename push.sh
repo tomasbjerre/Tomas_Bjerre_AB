@@ -5,7 +5,13 @@ git config user.name "Travis CI"
 
 git checkout master
 
-./update-stats.sh || exit 0
+./update-stats.sh
+if [ $? -eq 0 ]; then
+    echo Update OK
+else
+    echo Update failed!
+    exit 0
+fi
 
 git add .
 git commit -a -m "Updated $TRAVIS_BUILD_NUMBER"

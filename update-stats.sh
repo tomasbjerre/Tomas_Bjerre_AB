@@ -3,9 +3,15 @@
 doget () {
  server=$1
  file=$2
- wget $1/$2 --no-check-certificate -O json/$2 || exit 0
+ wget $1/$2 --no-check-certificate -O json/$2
+ if [ $? -eq 0 ]; then
+  echo Downloaded OK
+ else
+  echo Download failed!
+  exit 0
+ fi
  cat json/$2 | python -m json.tool > json/$2.pretty
-} 
+}
 
 rm -rfv json || echo No json folder
 mkdir json
