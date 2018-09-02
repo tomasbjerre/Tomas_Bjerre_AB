@@ -3,7 +3,7 @@
 doget () {
  server=$1
  file=$2
- wget $1/$2 --no-check-certificate -O json/$2
+ wget $1/$2 --no-check-certificate -O json/$2 -T 10
  if [ $? -eq 0 ]; then
   echo Downloaded OK
  else
