@@ -8,7 +8,7 @@ doget () {
   echo Downloaded OK
  else
   echo Download failed!
-  exit 0
+  exit 1
  fi
  cat json/$2 | python -m json.tool > json/$2.pretty
 }

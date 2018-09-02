@@ -10,7 +10,7 @@ if [ $? -eq 0 ]; then
     echo Update OK
 else
     echo Update failed!
-    exit 0
+    exit 1
 fi
 
 git add .
