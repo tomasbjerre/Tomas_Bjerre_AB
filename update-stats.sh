@@ -3,7 +3,7 @@
 doget () {
  server=$1
  file=$2
- wget $1/$2 --no-check-certificate -O json/$2
+ wget $1/$2 --no-check-certificate -O json/$2 || echo "Unable to download" && exit 0
  cat json/$2 | python -m json.tool > json/$2.pretty
 } 
 

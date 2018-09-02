@@ -5,7 +5,7 @@ git config user.name "Travis CI"
 
 git checkout master
 
-./update-stats.sh
+./update-stats.sh || exit 0
 
 git add .
 git commit -a -m "Updated $TRAVIS_BUILD_NUMBER"
