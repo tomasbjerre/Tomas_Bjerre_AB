@@ -31,7 +31,8 @@
         ],
         "distribution": {
             "bundled": false,
-            "downloads": 17678,
+            "bundledCloud": false,
+            "downloads": 17691,
             "totalInstalls": 2241,
             "totalUsers": 475362
         },
@@ -127,7 +128,7 @@
             "href": "/rest/2/assets/images%2F987c2f97-da93-4a2f-b1b3-f5d925061ae7.png"
         },
         "recommendations": {
-            "href": "/rest/2/addons/se.bjurr.prnfs.pull-request-notifier-for-stash/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting,includeHidden,includePrivate,marketingLabel*,text,withVersion,offset,limit}",
+            "href": "/rest/2/addons/se.bjurr.prnfs.pull-request-notifier-for-stash/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting*,includeHidden,includePrivate,marketingLabel*,text,withVersion,offset,limit}",
             "templated": true
         },
         "reviews": [

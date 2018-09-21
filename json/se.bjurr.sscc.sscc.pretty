@@ -20,7 +20,8 @@
         ],
         "distribution": {
             "bundled": false,
-            "downloads": 2762,
+            "bundledCloud": false,
+            "downloads": 2763,
             "totalInstalls": 376,
             "totalUsers": 96122
         },
@@ -116,7 +117,7 @@
             "href": "/rest/2/assets/images%2Fb409ba02-2e33-4a71-8433-3f647fb16076.png"
         },
         "recommendations": {
-            "href": "/rest/2/addons/se.bjurr.sscc.sscc/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting,includeHidden,includePrivate,marketingLabel*,text,withVersion,offset,limit}",
+            "href": "/rest/2/addons/se.bjurr.sscc.sscc/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting*,includeHidden,includePrivate,marketingLabel*,text,withVersion,offset,limit}",
             "templated": true
         },
         "reviews": [
