@@ -32,7 +32,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 17775,
+            "downloads": 17805,
             "totalInstalls": 2243,
             "totalUsers": 476847
         },
@@ -162,7 +162,7 @@
     "communityEnabled": true,
     "googleAnalyticsId": "UA-61313802-1",
     "key": "se.bjurr.prnfs.pull-request-notifier-for-stash",
-    "lastModified": "2018-06-07T16:13:03.529Z",
+    "lastModified": "2018-09-28T15:23:24.402Z",
     "name": "Pull Request Notifier for Bitbucket",
     "status": "public",
     "summary": "The plugin can make other systems, like Jenkins, Bamboo, Hipchat, Slack, TeamCity..., aware of changes in Bitbucket. Like PR opened. It can, for example, trigger a build in Jenkins with necessary parameters like from/to repo and from/to hash.",
