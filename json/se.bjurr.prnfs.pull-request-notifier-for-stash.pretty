@@ -32,7 +32,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 18117,
+            "downloads": 18143,
             "totalInstalls": 2273,
             "totalUsers": 491811
         },
@@ -105,7 +105,8 @@
                     "href": "/rest/2/vendors/1211896"
                 }
             },
-            "name": "Tomas Bjerre"
+            "name": "Tomas Bjerre",
+            "programs": {}
         }
     },
     "_links": {

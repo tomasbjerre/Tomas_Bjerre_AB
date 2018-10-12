@@ -86,7 +86,8 @@
                     "href": "/rest/2/vendors/1211896"
                 }
             },
-            "name": "Tomas Bjerre"
+            "name": "Tomas Bjerre",
+            "programs": {}
         }
     },
     "_links": {
