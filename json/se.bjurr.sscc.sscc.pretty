@@ -21,7 +21,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 2881,
+            "downloads": 2883,
             "totalInstalls": 373,
             "totalUsers": 96762
         },
@@ -155,6 +155,7 @@
     "lastModified": "2018-08-28T20:27:32.133Z",
     "name": "Simple Bitbucket Commit Checker",
     "status": "public",
+    "storesPersonalData": false,
     "summary": "Simple Bitbucket Commit Checker rejects faulty commits. Highly configurable to give correct guidance to committers. Telling them whats wrong with the commits and how to correct it.\r\n\r\nGlobal settings with Settings Synchronizer https://goo.gl/MzRBNl",
     "tagLine": "Commit checker with focus on being informative and user friendly",
     "vendorLinks": {

@@ -13,7 +13,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 432,
+            "downloads": 433,
             "totalInstalls": 138,
             "totalUsers": 32253
         },
@@ -142,6 +142,7 @@
     "lastModified": "2017-08-31T10:12:26.943Z",
     "name": "Settings Synchronizer for Bitbucket",
     "status": "public",
+    "storesPersonalData": false,
     "summary": "Will Synchronize a configured set of parameters, like hooks settings, among projects and repositories. So that the settings of one repo can be applied to all repos.",
     "tagLine": "Synchronize settings among repos and projects",
     "vendorLinks": {

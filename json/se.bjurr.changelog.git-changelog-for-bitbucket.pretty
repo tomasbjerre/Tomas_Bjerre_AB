@@ -13,7 +13,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 1937,
+            "downloads": 1939,
             "totalInstalls": 347,
             "totalUsers": 60890
         },
@@ -142,6 +142,7 @@
     "lastModified": "2017-08-31T10:12:07.314Z",
     "name": "Git Changelog for Bitbucket",
     "status": "public",
+    "storesPersonalData": false,
     "summary": "Uses the Git Changelog Lib to parse repositories to create changelogs. The changelog is completely customizable through a template and variables gathered from Bitbucket and repository.",
     "tagLine": "Creates a changelog, or releasenotes, for any GIT repo in Bitbucket Server",
     "vendorLinks": {
