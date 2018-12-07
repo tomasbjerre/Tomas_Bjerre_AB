@@ -32,7 +32,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 19043,
+            "downloads": 19074,
             "totalInstalls": 2286,
             "totalUsers": 507558
         },
@@ -60,8 +60,8 @@
             }
         },
         "reviews": {
-            "averageStars": 3.692307710647583,
-            "count": 26
+            "averageStars": 3.592592477798462,
+            "count": 27
         },
         "vendor": {
             "_embedded": {
