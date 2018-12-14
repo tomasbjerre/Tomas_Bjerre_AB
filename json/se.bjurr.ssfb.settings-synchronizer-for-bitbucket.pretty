@@ -13,7 +13,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 462,
+            "downloads": 467,
             "totalInstalls": 145,
             "totalUsers": 32077
         },
@@ -107,7 +107,7 @@
             "href": "/rest/2/assets/images%2F9313d60e-ab51-4a58-bf8d-0c7fbe98e41b.png"
         },
         "recommendations": {
-            "href": "/rest/2/addons/se.bjurr.ssfb.settings-synchronizer-for-bitbucket/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting*,includeHidden,includePrivate,marketingLabel*,text,withVersion,offset,limit}",
+            "href": "/rest/2/addons/se.bjurr.ssfb.settings-synchronizer-for-bitbucket/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting*,includeHidden,includePrivate,marketingLabel*,text,withVersion,storesPersonalData,offset,limit}",
             "templated": true
         },
         "reviews": [

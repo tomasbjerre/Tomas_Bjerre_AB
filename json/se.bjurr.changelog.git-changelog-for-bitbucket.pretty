@@ -107,7 +107,7 @@
             "href": "/rest/2/assets/images%2F167c55a4-e746-4fb6-8bce-fd8b06877017.png"
         },
         "recommendations": {
-            "href": "/rest/2/addons/se.bjurr.changelog.git-changelog-for-bitbucket/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting*,includeHidden,includePrivate,marketingLabel*,text,withVersion,offset,limit}",
+            "href": "/rest/2/addons/se.bjurr.changelog.git-changelog-for-bitbucket/recommendations{?application,applicationBuild,category*,cost,filter,forThisUser,hosting*,includeHidden,includePrivate,marketingLabel*,text,withVersion,storesPersonalData,offset,limit}",
             "templated": true
         },
         "reviews": [
