@@ -152,7 +152,7 @@
     "communityEnabled": true,
     "googleAnalyticsId": "UA-60482428-1",
     "key": "se.bjurr.sscc.sscc",
-    "lastModified": "2018-08-28T20:27:32.133Z",
+    "lastModified": "2019-01-05T09:08:05.769Z",
     "name": "Simple Bitbucket Commit Checker",
     "status": "public",
     "storesPersonalData": false,
