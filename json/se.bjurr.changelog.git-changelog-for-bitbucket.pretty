@@ -13,7 +13,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 2022,
+            "downloads": 2034,
             "totalInstalls": 360,
             "totalUsers": 65729
         },
@@ -139,7 +139,7 @@
     },
     "communityEnabled": true,
     "key": "se.bjurr.changelog.git-changelog-for-bitbucket",
-    "lastModified": "2019-01-05T09:07:21.187Z",
+    "lastModified": "2019-01-15T17:09:03.694Z",
     "name": "Git Changelog for Bitbucket",
     "status": "public",
     "storesPersonalData": false,
