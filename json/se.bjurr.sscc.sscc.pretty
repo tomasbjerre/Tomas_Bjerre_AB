@@ -21,7 +21,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 3022,
+            "downloads": 3025,
             "totalInstalls": 378,
             "totalUsers": 111992
         },
@@ -151,6 +151,7 @@
     "codegeist": true,
     "communityEnabled": true,
     "googleAnalyticsId": "UA-60482428-1",
+    "hiddenIn": "app",
     "key": "se.bjurr.sscc.sscc",
     "lastModified": "2019-01-05T09:08:05.769Z",
     "name": "Simple Bitbucket Commit Checker",

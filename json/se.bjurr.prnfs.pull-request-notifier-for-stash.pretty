@@ -32,7 +32,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 20108,
+            "downloads": 20112,
             "totalInstalls": 2297,
             "totalUsers": 2148003283
         },
@@ -162,6 +162,7 @@
     "codegeist": true,
     "communityEnabled": true,
     "googleAnalyticsId": "UA-61313802-1",
+    "hiddenIn": "app",
     "key": "se.bjurr.prnfs.pull-request-notifier-for-stash",
     "lastModified": "2019-01-05T09:06:59.589Z",
     "name": "Pull Request Notifier for Bitbucket",

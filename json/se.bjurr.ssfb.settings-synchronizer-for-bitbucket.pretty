@@ -13,7 +13,7 @@
         "distribution": {
             "bundled": false,
             "bundledCloud": false,
-            "downloads": 516,
+            "downloads": 517,
             "totalInstalls": 147,
             "totalUsers": 37417
         },
@@ -138,6 +138,7 @@
         }
     },
     "communityEnabled": true,
+    "hiddenIn": "app",
     "key": "se.bjurr.ssfb.settings-synchronizer-for-bitbucket",
     "lastModified": "2019-01-05T09:07:38.338Z",
     "name": "Settings Synchronizer for Bitbucket",
