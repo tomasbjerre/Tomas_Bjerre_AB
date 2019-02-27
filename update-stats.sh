@@ -23,8 +23,8 @@ doget $server violation-comments-to-gitlab.stats.json
 doget $server violation-comments-to-github.stats.json
 doget $server violation-comments-to-stash.stats.json
 
-addons=https://marketplace.atlassian.com/rest/2/addons
-doget $addons se.bjurr.prnfs.pull-request-notifier-for-stash
-doget $addons se.bjurr.sscc.sscc
-doget $addons se.bjurr.changelog.git-changelog-for-bitbucket
-doget $addons se.bjurr.ssfb.settings-synchronizer-for-bitbucket
+#addons=https://marketplace.atlassian.com/rest/2/addons
+#doget $addons se.bjurr.prnfs.pull-request-notifier-for-stash
+#doget $addons se.bjurr.sscc.sscc
+#doget $addons se.bjurr.changelog.git-changelog-for-bitbucket
+#doget $addons se.bjurr.ssfb.settings-synchronizer-for-bitbucket
